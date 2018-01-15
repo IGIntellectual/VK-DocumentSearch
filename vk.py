@@ -14,5 +14,5 @@ for i in range(minValue, 457457887):
         soup = BeautifulSoup(html, 'html.parser')
         obj = soup.find('div', attrs={'class': 'message_page_title'})
         if str(obj) != '<div class="message_page_title">Ошибка</div>':
-            print('https://vk.com/doc' + idVk + '_' + str(i))
+            print(pageLink + str(i))
     i += 1
